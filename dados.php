@@ -11,9 +11,7 @@
     <script type="text/javascript" src="funcoes.js"></script>
     <title>Cadastro</title>
   </head>
-  <body>
-     
-       
+  <body>   
     <div class="container">
         <div class="row">
             <div class="col">
@@ -22,12 +20,20 @@
                         <img src="img/jogador.jpg" alt="HTML tutorial" style="width:120px;height:120px;">
                     </div>
                     <p>Jogador </p>
-                
                     <div class="jogada1" style="display:none;">
-                        <p>valor da 1ª jogada:</p>
+                        <p>valor da 1ª jogada:</p> 
+                    </div>
+                    <div class="dadoImgJogador" style="display:none;">
+                            <img id="imgJogador" src="img/1.png"  alt="HTML tutorial" style="width:120px;height:120px;">
+                    </div>
+                    <div class="dadoImgJogador" style="display:none;">
+                        <img id="imgJogador" src="img/1.png"  alt="HTML tutorial" style="width:120px;height:120px;">
                     </div>
                     <div class="jogada2" style="display:none;" >
                         <p>valor da 2ª jogada:</p>
+                    </div>
+                    <div class="dadoImgJogador2" style="display:none;">
+                        <img id="imgJogador2" src="img/1.png"  alt="HTML tutorial" style="width:120px;height:120px;">
                     </div>
                     <div class="soma" style="display:none;" >
                         <p>valor somado:</p>
@@ -45,10 +51,16 @@
                         <p>Computador está jogando os dados</p>
                     </div>
                     <div class="jogada3" style="display:none;">
-                        <p>valor da 1ª jogada:</p>
+                        <p>valor da 1ª jogada:</p>  
+                    </div>
+                    <div class="dadoImgComputador" style="display:none;">
+                        <img id="imgComputador" src="img/1.png"  alt="HTML tutorial" style="width:120px;height:120px;">
                     </div>
                     <div class="jogada4" style="display:none;" >
                         <p>valor da 2ª jogada:</p>
+                    </div>
+                    <div class="dadoImgComputador2" style="display:none;">
+                        <img id="imgComputador2" src="img/1.png"  alt="HTML tutorial" style="width:120px;height:120px;">
                     </div>
                     <div class="soma1" style="display:none;" >
                         <p>valor somado do computador:</p>
@@ -60,7 +72,7 @@
                         </div>
                     </div>
                     <div class="derrota" style="display:none;">
-                        <h2>voce perdeu</h2>
+                        <h2>voce Perdeu</h2>
                     </div>
                     <div class="empate" style="display:none;">
                         <h2>Empate com o computador</h2>

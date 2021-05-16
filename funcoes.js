@@ -15,7 +15,8 @@ function random1 (){
     botao.style.display = "none";
     var botao = document.querySelector('#clickMe1');
     botao.style.display = "block";
-    ramdom3();
+  
+    chamaDado();
 }
 
 function random2 (){
@@ -27,6 +28,7 @@ function random2 (){
     botao.style.display = "none";
     var botao = document.querySelector('#soma');
     botao.style.display = "block";
+    chamadado2();
 }
 
 function soma(){
@@ -38,9 +40,9 @@ function soma(){
     pai1.style.display = "block";
     confere=true;
     if(confere==true){ 
-        let teste = setTimeout(computador1, 6000);
-        let teste1 = setTimeout(computador2, 12000);
-        let teste2 = setTimeout(computadorSoma, 18000); 
+        let teste = setTimeout(computador1, 3000);
+        let teste1 = setTimeout(computador2, 5000);
+        let teste2 = setTimeout(computadorSoma, 7000); 
     }
 }
 
@@ -53,7 +55,8 @@ function computador1(){
     valor3 = Math.floor(Math.random() * 6 + 1  );   
     document.querySelector('.jogada3').innerHTML = 'Valor da 1ª jogada é: '+ valor3;
     var pai = document.querySelector('.jogada3');
-    pai.style.display = "block";   
+    pai.style.display = "block";
+    chamaDado3();   
 }
 function computador2(){
     //2 valor do computador randomico
@@ -61,6 +64,7 @@ function computador2(){
     document.querySelector('.jogada4').innerHTML = 'Valor da 2ª jogada é: '+ valor4;
     var pai = document.querySelector('.jogada4');
     pai.style.display = "block";
+    chamaDado4();
 }
 
 function computadorSoma(){
@@ -76,7 +80,7 @@ function confereJogada(){
     if(valortotal>valortotal1){
         var pai = document.querySelector('.vitoria');
         pai.style.display = "block";  
-    }else  if(valortotal>valortotal1){
+    }else  if(valortotal<valortotal1){
         var pai = document.querySelector('.derrota');
         pai.style.display = "block"; 
 
@@ -84,4 +88,144 @@ function confereJogada(){
         var pai = document.querySelector('.empate');
         pai.style.display = "block"; 
     }
+}
+
+function chamaDado(){
+    if(valor1==1){
+        document.getElementById("imgJogador").src="img/1.png";
+        var pai = document.querySelector('.dadoImgJogador');
+        pai.style.display = "block"; 
+
+    }else if(valor1==2){
+        document.getElementById("imgJogador").src="img/2.png";
+        var pai = document.querySelector('.dadoImgJogador');
+        pai.style.display = "block"; 
+
+    }else if(valor1==3){
+        document.getElementById("imgJogador").src="img/3.png";
+        var pai = document.querySelector('.dadoImgJogador');
+        pai.style.display = "block"; 
+
+    }else if(valor1==4){
+        document.getElementById("imgJogador").src="img/4.png";
+        var pai = document.querySelector('.dadoImgJogador');
+        pai.style.display = "block"; 
+
+    }else if(valor1==5){
+        document.getElementById("imgJogador").src="img/5.png";
+        var pai = document.querySelector('.dadoImgJogador');
+        pai.style.display = "block"; 
+
+    }else if(valor1==6){
+        document.getElementById("imgJogador").src="img/6.png";
+        var pai = document.querySelector('.dadoImgJogador');
+        pai.style.display = "block"; 
+
+    }
+  
+}
+function chamadado2(){
+  //dado 2
+  if(valor2==1){
+    document.getElementById("imgJogador2").src="img/1.png";
+    var pai = document.querySelector('.dadoImgJogador2');
+    pai.style.display = "block"; 
+
+    }else if(valor2==2){
+        document.getElementById("imgJogador2").src="img/2.png";
+        var pai = document.querySelector('.dadoImgJogador2');
+        pai.style.display = "block"; 
+
+    }else if(valor2==3){
+        document.getElementById("imgJogador2").src="img/3.png";
+        var pai = document.querySelector('.dadoImgJogador2');
+        pai.style.display = "block"; 
+
+    }else if(valor2==4){
+        document.getElementById("imgJogador2").src="img/4.png";
+        var pai = document.querySelector('.dadoImgJogador2');
+        pai.style.display = "block"; 
+
+    }else if(valor2==5){
+        document.getElementById("imgJogador2").src="img/5.png";
+        var pai = document.querySelector('.dadoImgJogador2');
+        pai.style.display = "block"; 
+
+    }else if(valor2==6){
+        document.getElementById("imgJogador2").src="img/6.png";
+        var pai = document.querySelector('.dadoImgJogador2');
+        pai.style.display = "block"; 
+
+    }
+}
+
+function chamaDado3(){
+    if(valor3==1){
+        document.getElementById("imgComputador").src="img/1.png";
+        var pai = document.querySelector('.dadoImgComputador');
+        pai.style.display = "block"; 
+
+    }else if(valor3==2){
+        document.getElementById("imgComputador").src="img/2.png";
+        var pai = document.querySelector('.dadoImgComputador');
+        pai.style.display = "block"; 
+
+    }else if(valor3==3){
+        document.getElementById("imgComputador").src="img/3.png";
+        var pai = document.querySelector('.dadoImgComputador');
+        pai.style.display = "block"; 
+
+    }else if(valor3==4){
+        document.getElementById("imgComputador").src="img/4.png";
+        var pai = document.querySelector('.dadoImgComputador');
+        pai.style.display = "block"; 
+
+    }else if(valor3==5){
+        document.getElementById("imgComputador").src="img/5.png";
+        var pai = document.querySelector('.dadoImgComputador');
+        pai.style.display = "block"; 
+
+    }else if(valor3==6){
+        document.getElementById("imgComputador").src="img/6.png";
+        var pai = document.querySelector('.dadoImgComputador');
+        pai.style.display = "block"; 
+
+    }
+  
+}
+
+
+function chamaDado4(){
+    if(valor4==1){
+        document.getElementById("imgComputador2").src="img/1.png";
+        var pai = document.querySelector('.dadoImgComputador2');
+        pai.style.display = "block"; 
+
+    }else if(valor4==2){
+        document.getElementById("imgComputador2").src="img/2.png";
+        var pai = document.querySelector('.dadoImgComputador2');
+        pai.style.display = "block"; 
+
+    }else if(valor4==3){
+        document.getElementById("imgComputador2").src="img/3.png";
+        var pai = document.querySelector('.dadoImgComputador2');
+        pai.style.display = "block"; 
+
+    }else if(valor4==4){
+        document.getElementById("imgComputador2").src="img/4.png";
+        var pai = document.querySelector('.dadoImgComputador2');
+        pai.style.display = "block"; 
+
+    }else if(valor4==5){
+        document.getElementById("imgComputador2").src="img/5.png";
+        var pai = document.querySelector('.dadoImgComputador2');
+        pai.style.display = "block"; 
+
+    }else if(valor4==6){
+        document.getElementById("imgComputador2").src="img/6.png";
+        var pai = document.querySelector('.dadoImgComputador2');
+        pai.style.display = "block"; 
+
+    }
+  
 }
